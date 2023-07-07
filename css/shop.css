@@ -1,0 +1,102 @@
+.shop{
+    height:720px;
+}
+
+.left .clickShow{
+    height: calc(100vh - 80px);
+    position:fixed;
+    z-index:200;
+    background:white;
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 100vh;
+    transition:0.5s
+}
+.left .clickShow .icon .icon1{
+    width:50px;
+    height:50px;
+    margin:20px
+}
+.left .clickShow .icon .icon2{
+    margin-top:30px;
+    width:30px;
+    height:30px;
+    margin-right:20px
+}
+.left .clickShow .text div{
+    text-align:center;
+    padding:20px;
+    font-size:25px
+}
+.left .clickShow .text div:hover{
+    background:rgb(248,249,250)
+}
+.left .clickShow .hide{
+    opacity: 0;
+    transform: scale(2);
+    z-index: -1000;
+}
+.left .clickShow .show{
+    opacity:1;
+    transform: scale(1)
+}
+.shop .goods{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px
+}
+.shop .goods .card{
+    width:200px;
+    height:280px;
+    background:white;
+    margin:15px;
+    border-radius:6px;
+    overflow:hidden
+}
+.shop .goods .card img{
+    width:100%;
+    height:180px
+}
+.shop .goods .card .name{
+    text-align: center;
+    font-weight:bold;
+    font-size:15px
+}
+.shop .goods .card .buy{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px
+}
+.shop .goods .card .buy .price{
+    font-size:20px;
+    color:#01633B
+}
+.shop .goods .card .buy img{
+    width:30px;
+    height:30px
+}
+.copyright{
+    background: #F8F9FA;
+    position:relative;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    font-size:18px
+}
+.copyright:before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:50px;
+    background:white;
+    left:-20px
+}
+.copyright:after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:50px;
+    background:white;
+    right:-5px
+}

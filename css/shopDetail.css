@@ -1,0 +1,297 @@
+body{
+    background:#E9DED8
+}
+input {
+    background: none;
+    outline: none;
+    border: none;
+  }
+.search{
+    padding:10px 40px;
+    width:100%;
+    height:100px;
+    background:white;
+    display:flex;
+    justify-content:space-between
+}
+@media(max-width:991px){
+    .min-hide{
+        display:none
+    }
+}
+@media(max-width:416px){
+    .search .min-none{
+        display:none
+    }
+}
+
+.search .right{
+    display:flex;
+    justify-content:space-between
+}
+.search .right .input{
+    background:#F3F3F3;
+    padding:20px;
+    height:60px;
+    margin:auto 40px;
+    border-radius:80px
+}
+.search .right .input .margin-top{
+    position:relative;
+    top:-5px
+}
+.search .right .input .margin{
+    margin-top:-15px
+}
+.search .right img{
+    width:50px;
+    height:50px
+}
+.search .right .min-hide{
+    margin-top:25px;
+    padding:10px 20px;
+    border:1px solid #ccc;
+    height:60px;
+    margin:auto 20px;
+    line-height:40px;
+    border-radius:30px;
+    font-size:18px
+}
+.serve{
+    height:90px;
+    background:white;
+    margin-top:40px;
+    margin-left:65px;
+    border-radius:60px;
+    display:flex;
+    justify-content:space-between
+}
+.serve .shopInfo{
+    display:flex;
+    width:50%;
+    justify-content:space-around;
+    margin:auto 20px
+}
+.serve .shopInfo .shopName{
+    font-size:20px;
+    font-weight:bold
+}
+.serve .shopInfo .line{
+    width:1px;
+    height:30px;
+    background:#ccc;
+    margin:auto 0
+}
+.serve .shopInfo .margin-auto{
+    margin:auto 0;
+    font-size:15px
+}
+.serve .shopInfo .bold{
+    font-weight:500;
+    font-size:20px
+}
+.serve .shopInfo img[src="./image/star.png"]{
+    width:50px;
+    height:50px;
+    margin-top:-5px;
+    margin-right:20px
+}
+.serve .shopInfo .flex{
+    display:flex;
+    
+}
+.serve .shopInfo .flex .shopName + div{
+    color:white;
+    background:#FF0036;
+    width:70px;
+    text-align:center;
+    border-radius:20px;
+    margin-top:6px
+}
+.serve .shopServe{
+    display:flex
+}
+.serve .shopServe div{
+    margin-top:25px;
+    padding:10px 20px;
+    border:1px solid #ccc;
+    height:60px;
+    margin:auto 20px;
+    line-height:40px;
+    border-radius:30px;
+    font-size:18px
+}
+.detail{
+    width:92%;
+    height:4050px;
+    background:white;
+    margin:150px auto;
+    border-radius:20px
+}
+.detail .shop{
+    margin-left:100px;
+    margin-top:20px;
+    border-radius:20px;
+    padding:0
+}
+.detail .info{
+    margin-top:40px;
+    margin-left:60px
+}
+.detail .info > div{
+    margin-bottom:10px
+}
+.detail .info .title{
+    font-size:20px;
+    font-weight:bold
+}
+.detail .info .pay-count{
+    color:#ccc
+}
+.detail .info .ensure{
+    display:flex;
+    justify-content:space-around;
+    width:180px;
+    border:1px solid #F5F5F5;
+    padding:10px 20px;
+    border-radius:20px
+}
+.detail .info .ensure:hover{
+    background:#F5F5F5;
+    color:#FF5000
+}
+.detail .info .ensure .line{
+    width:1px;
+    height:20px;
+    background:#ccc
+}
+.detail .info .transport{
+    display:flex;
+    margin-top:20px
+}
+.detail .info .transport .transportInfo{
+    margin-left:40px;
+    font-size:18px
+}
+.detail .info .font{
+    color:#7F7F7F;
+    font-size:20px
+}
+.detail .info .color{
+    display:flex;
+    margin-top:40px
+}
+.detail .info .color .colorInfo{
+    font-size:18px;
+    background:#F0F0F0;
+    border:1px solid #F0F0F0;
+    padding:10px;
+    border-radius:8px;
+    margin-top:-10px
+}
+.detail .info .color .colorInfo:hover{
+    background:#FFF7F3;
+    border:1px solid #FFB391;
+    color:#FF5000
+}
+.detail .info .count{
+    display:flex;
+    margin-top:40px
+}
+.detail .info .count .click{
+    display:flex;
+    justify-content:space-around;
+    background:#F0F0F0;
+    width:150px;
+    height:50px;
+    border-radius:7px;
+    font-size:20px;
+    line-height:50px;
+    margin-top:-10px;
+    margin-left:40px
+}
+.detail .info .count .click div{
+    text-align:center;
+}
+.detail .info .count .click .empty{
+    width:2px;
+    background:white
+}
+.detail .info .count .click .reduce{
+    margin-left:10px;
+    cursor:pointer
+}
+.detail .info .count .click .increase{
+    margin-right:10px;
+    cursor:pointer
+}
+.detail .info .pay-btn{
+    display:flex;
+    margin-top:60px
+}
+.detail .info .pay-btn div{
+    color:white;
+    padding:20px 40px;
+    font-size:20px
+}
+.detail .info .pay-btn .left{
+    background:linear-gradient(to right,#FF7600,#FF5100);
+    border-radius: 40px 0 0 40px
+
+}
+.detail .info .pay-btn .right{
+    background:linear-gradient(to right,#FFCA00,#FF9602);
+    border-radius:0 40px 40px 0
+}
+.detail .detailTitle{
+    margin-top:60px;
+    margin-left:40px;
+    font-size:25px
+}
+.detail .detailContainer{
+    width:60%;
+    height:100px;
+    margin: 40px auto;
+    
+}
+.detail .detailInfo .flex{
+    display:flex;
+    font-size:15px
+}
+.detail .detailInfo .flex div{
+    width:290px;
+    padding-bottom:10px
+}
+.detail .detailImg{
+    margin-top:20px
+}
+.detail .detailImg img{
+    width:100%
+}
+.copyright{
+    background:white;
+    position:relative;
+    top:3155px;
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    font-size:25px
+}
+.copyright:before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:50px;
+    background:white;
+    left:-20px
+}
+.copyright:after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:50px;
+    background:white;
+    right:-5px
+}

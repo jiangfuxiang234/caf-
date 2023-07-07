@@ -1,0 +1,64 @@
+.title{
+    color:#C2A661;
+    text-align:center;
+    padding:40px;
+    font-size:30px
+}
+.introduce{
+    display:flex;
+    justify-content:space-around
+}
+.introduce .font{
+    font-size:20px;
+    width:50%
+}
+.introduce .font div{
+    margin-bottom:40px
+}
+.introduce .font li{
+    margin-bottom:20px
+}
+.introduce img{
+    width:400px;
+    height:250px;
+    margin-top:90px
+}
+.aboutUs .project .project1{
+    width:80%;
+    height:217px;
+    /* height:350px; */
+    margin:0 auto;
+    box-shadow: 0 0 5px 0 #ccc;
+    overflow:hidden;
+    margin-bottom:40px;
+    transition:.5s
+}
+.aboutUs .project .project1 .projectName{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+.aboutUs .project .project1 .projectName .name{
+    font-size:30px
+}
+.aboutUs .project .project1 .projectName span{
+    font-size:20px;
+    margin-top:5px;
+    /* transform:rotate(180deg) */
+    transition:.5s;
+    transform-origin:50% 6px
+}
+.aboutUs .project .project1 .content{
+    padding-left:20px;
+    padding-top:10px;
+    font-size:20px;
+    line-height:30px
+}
+@media(max-width:900px){
+    .introduce img{
+        display:none
+    }
+}
+.copyright{
+    padding-bottom:80px
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- 根据设备的大小调整页面的显示宽度，缩放比例为1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>星享咖啡馆</title>
+	<!-- Bootstrap所需要的一些基础样式的*.css文件 -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- 网页标签的icon图标 -->
+	<link rel="shortcut icon" href="./image/star.png" type="image/x-icon">
+	<!-- shopDetail页面所需要的一些基础样式的css文件 -->
+	<link rel="stylesheet" href="./css/shopDetail.css">
+	<!-- jquery的js文件 -->
+	<script src="./js/jquery.min.js"></script>
+	<style type="text/css">
+
+
+	</style>
+</head>
+
+<body>
+	<div class="search">
+		<img class="min-none" src="./image/star.png" alt="">
+		<div class="right row">
+			<div class="input">
+				<img class="margin" src="./image/search.png" alt="">
+				<input class="margin-top" type="text" placeholder="搜索宝贝">
+			</div>
+			<div class="min-hide">搜全站</div>
+			<div class="min-hide">搜本店</div>
+		</div>
+	</div>
+	<div class="serve col-lg-11 col-md-11 col-xs-8 center">
+		<div class="shopInfo">
+			<div class="flex">
+				<img src="./image/star.png" alt="">
+				<div>
+					<div class="shopName">星享官方旗舰店</div>
+					<div>今日畅享</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="margin-auto">
+				<div>宝贝描述</div>
+				<div class="bold">4.8</div>
+			</div>
+			<div class="margin-auto">
+				<div>卖家服务</div>
+				<div class="bold">4.9</div>
+			</div>
+			<div class="margin-auto">
+				<div>物流服务</div>
+				<div class="bold">4.9</div>
+			</div>
+		</div>
+		<div class="shopServe">
+			<div class="min-hide">联系客服</div>
+			<div class="min-hide">进入店铺</div>
+		</div>
+	</div>
+	<div class="detail">
+		<div class="row">
+			<img class="col-lg-3 col-md-3 col-xs-3 shop" src="./image/cup.png" alt="">
+			<div class="col-lg-7 col-md-12 col-xs-12 info">
+				<div class="title">星巴克杯子355ml经典白绿LOGO款马克杯陶瓷简约家用办公桌面水杯</div>
+				<div class="pay-count">已预定 22</div>
+				<div class="ensure">
+					<div>优惠</div>
+					<div class="line"></div>
+					<div>保障</div>
+					<div class="line"></div>
+					<div>参数</div>
+				</div>
+				<div class="transport">
+					<div class="font">配送：</div>
+					<div class="transportInfo">
+						<div>福建泉州 至 福建省 龙岩市</div>
+						<div>快递: 免运费 付尾款后48小时内发货</div>
+					</div>
+				</div>
+				<div class="color">
+					<div class="font">颜色分类：</div>
+					<div class="colorInfo">355ml经典白绿LOGO款马克杯</div>
+				</div>
+				<div class="count">
+					<div class="font">数量：</div>
+					<div class="click">
+						<div class="reduce">-</div>
+						<div class="empty"></div>
+						<div class="num">1</div>
+						<div class="empty"></div>
+						<div class="increase">+</div>
+					</div>
+				</div>
+				<div class="pay-btn">
+					<div class="left">加入购物车</div>
+					<div class="right">立即购买</div>
+				</div>
+			</div>
+		</div>
+		<div class="detailTitle">宝贝详情</div>
+		<div class="detailContainer">
+			<div class="detailInfo">
+				<div class="flex">
+					<div>品牌：星享</div>
+					<div>材质：陶瓷</div>
+					<div>容量:301ml(含)~400ml(含)</div>
+				</div>
+				<div class="flex">
+					<div>风格：美式</div>
+					<div>产地：中国大陆</div>
+					<div>颜色分类：355ml经典白绿LOGO款</div>
+				</div>
+				<div class="flex">
+					<div>价格区间:80元以上</div>
+					<div>货号：355ml经典白绿LOGO款马克杯</div>
+				</div>
+			</div>
+			<div class="detailImg">
+				<img src="./image/shopDetail1.png" alt="">
+				<img src="./image/shopDetail2.png" alt="">
+				<img src="./image/shopDetail3.png" alt="">
+				<img src="./image/shopDetail4.png" alt="">
+				<img src="./image/shopDetail5.png" alt="">
+				<img src="./image/shopDetail6.png" alt="">
+			</div>
+		</div>
+		<div class="copyright">
+			© 2023-2026 jiangfuxiang.com 版权所有
+		</div>
+	</div>
+	<script>
+		$(".click").find(".reduce").click(function () {
+			var num = $(this).parent().find(".num").text();
+                if(num <= 0){
+					num = 0;
+					alert("数量不能小于0")
+				}else{
+					num--;
+				$(this).parent().find(".num").text(num)
+				}
+		})
+		$(".click").find(".increase").click(function () {
+			var num = $(this).parent().find(".num").text();
+					num++;
+				$(this).parent().find(".num").text(num)
+		})
+	</script>
+</body>
+
+</html>

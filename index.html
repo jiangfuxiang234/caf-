@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- 根据设备的大小调整页面的显示宽度，缩放比例为1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>星享咖啡馆</title>
+
+	<!-- Bootstrap所需要的一些基础样式的*.css文件 -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- 网页标签的icon图标 -->
+	<link rel="shortcut icon" href="./image/star.png" type="image/x-icon">
+	<!-- index页面所需要的一些基础样式的css文件 -->
+	<link rel="stylesheet" href="./css/index.css">
+
+	<!-- bootstrap的图标 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<!-- 兼容轮播图的bootstrap的css版本-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<!-- bootstra的js和ppoper的js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+	<style type="text/css">
+
+
+	</style>
+</head>
+
+<body>
+	<!-- 页面布局等代码 -->
+	<div class="container row">
+		<div class="left col-lg-4">
+			<div class="serve">
+				<div class="nav">
+					<div class="select">
+						<img src="./image/star.png" alt="">
+						<div>门店</div>
+						<div>我的账户</div>
+						<div>菜单</div>
+					</div>
+					<span class="glyphicon glyphicon-align-justify open"></span>
+				</div>
+
+				<div class="topic">
+					<div class="text">
+						<span>心情惬意来杯咖啡吧</span>
+						<img src="./image/coffee.png" alt="">
+					</div>
+					<div class="login">
+						<div><a href="./login.html">登录</a></div>
+						<div><a href="./register.html">注册</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="clickShow hide">
+				<div class="icon">
+					<img class="icon1" src="./image/star.png" alt="">
+					<img class="icon2 close" src="./image/close.png" alt="">
+				</div>
+				<div class="text">
+					<div>门店</div>
+					<div>星享俱乐部</div>
+					<hr>
+					<div>菜单</div>
+					<div>星享移动应用</div>
+					<div>星礼卡</div>
+					<div>星享甄选</div>
+					<div>啡快——在线</div>
+					<div>专星送</div>
+				</div>
+			</div>
+		</div>
+		<div class="right col-lg-8">
+			<!-- <img class="col-lg-12 col-md-12 col-xs-12 rotation" src="./image/kv1.jpg" alt=""> -->
+			<div class="row">
+				<!-- 轮播图组件 -->
+				<div id="pic" class="carousel slide" data-bs-ride="carousel" data-bs-ride="true">
+					<!-- 轮播图容器 -->
+					<div class="carousel-inner">
+						<!-- 轮播图子项 -->
+						<div class="carousel-item active"><img class="img-fluid w-100" src="./image/kv1.jpg" alt="">
+						</div>
+						<div class="carousel-item"><img class="img-fluid w-100" src="./image/kv2.jpg" alt=""></div>
+						<div class="carousel-item"><img class="img-fluid w-100" src="./image/kv3.jpg" alt=""></div>
+						<div class="carousel-item"><img class="img-fluid w-100" src="./image/kv4.jpg" alt=""></div>
+					</div>
+					<!-- 轮播图控件 控制器 -->
+					<a href="#pic" role="button" class="carousel-control-next" dat-bs-target="#pic"
+						data-bs-slide="next"> <span class="glyphicon glyphicon-menu-right arrow"></span></a>
+					<a href="#pic" role="button" class="carousel-control-prev" dat-bs-target="#pic"
+						data-bs-slide="prev"> <span class="glyphicon glyphicon-menu-left arrow"></span></a>
+
+					<!-- 小长条，指示器 indicators -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-slide-to="0" data-bs-target="#pic" class=""
+							aria-label="Slide 1"></button>
+						<button type="button" data-bs-slide-to="1" data-bs-target="#pic" aria-label="Slide 2"
+							class=""></button>
+						<button type="button" data-bs-slide-to="2" data-bs-target="#pic" aria-label="Slide 3"
+							class=""></button>
+						<button type="button" data-bs-slide-to="3" data-bs-target="#pic" aria-label="Slide 4"
+							class="active" aria-current="true"></button>
+					</div>
+				</div>
+			</div>
+			<div class="row image">
+				<img class="col-lg-3 col-md-12 goShop" src="./image/img_01.jpg" alt="">
+				<img class="col-lg-3 col-md-12" src="./image/img_02.jpg" alt="">
+				<img class="col-lg-3 col-md-12" src="./image/img_03.jpg" alt="">
+			</div>
+			<div class="row club">
+				<div class="col-lg-6 col-md-12">
+					<div class="title">星享俱乐部</div>
+					<div class="text">
+						开启您的星享之旅，星星越多、<br>会员等级越高、好礼越丰富。<text class="more">了解更多&gt;</text>
+					</div>
+				</div>
+				<img class="col-lg-6 col-md-12" src="./image/starClub.png" alt="">
+			</div>
+			<div class="copyright">
+				© 2023-2026 jiangfuxiang.com 版权所有
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap基于jQuery，需要先引入jQuery文件 -->
+	<script src="./js/jquery.min.js"></script>
+	<!-- Bootstrap所需要的一些组件的*.js文件 -->
+	<script src="./js/bootstrap.js"></script>
+	<script>
+		$(".goShop").on('click', function () {
+			window.location.href = "./shop.html"
+		})
+		$(".open").on("click", function () {
+			$(".clickShow").removeClass("hide").addClass("show");
+			setTimeout(function () {
+				window.innerWidth;
+				console.log(111);
+			}, 0)
+
+		})
+		$(".close").on("click", function () {
+			$(".clickShow").removeClass("show").addClass("hide")
+			setTimeout(function () {
+				window.innerWidth
+			}, 0)
+		})
+		if (sessionStorage.getItem('isLogin')) {
+			$('.login').css("display", "none")
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- 根据设备的大小调整页面的显示宽度，缩放比例为1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>星享咖啡馆</title>
+	<!-- Bootstrap所需要的一些基础样式的*.css文件 -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- 网页标签的icon图标 -->
+    <link rel="shortcut icon" href="./image/star.png" type="image/x-icon">
+	<!-- index页面所需要的一些基础样式的css文件 -->
+	<link rel="stylesheet" href="./css/index.css">
+    <!-- shop页面所需要的一些基础样式的css文件 -->
+	<link rel="stylesheet" href="./css/shop.css">
+	<style type="text/css">
+
+
+	</style>
+</head>
+
+<body>
+	<!-- 页面布局等代码 -->
+	<div class="container row">
+		<div class="left col-lg-4">
+			<div class="nav">
+				<div class="select">
+					<img src="./image/star.png" alt="">
+					<div>门店</div>
+					<div>我的账户</div>
+					<div>菜单</div>
+				</div>
+				<span class="glyphicon glyphicon-align-justify open"></span>
+			</div>
+
+			<div class="topic">
+				<div class="text">
+                  <span>心情惬意来杯咖啡吧</span>
+				  <img src="./image/coffee.png" alt="">
+				</div>
+			</div>
+
+            <div class="clickShow hide">
+				<div class="icon">
+					<img class="icon1" src="./image/star.png" alt="">
+					<img class="icon2 close" src="./image/close.png" alt="">
+				</div>
+				<div class="text">
+					<div>门店</div>
+					<div>星享俱乐部</div>
+					<hr>
+					<div>菜单</div>
+					<div>星享移动应用</div>
+					<div>星礼卡</div>
+					<div>星享甄选</div>
+					<div>啡快——在线</div>
+					<div>专星送</div>
+				</div>
+			</div>
+		</div>
+		<div class="right col-lg-8 shop">
+			<div class="goods row">
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail">
+                    <img src="./image/goods1.png" alt="">
+                    <div class="name">355ml白绿LOGO马克杯</div>
+                    <div class="buy">
+                        <div class="price">￥159</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail" >
+                    <img src="./image/goods2.png" alt="">
+                    <div class="name">473ml白绿单手操作杯</div>
+                    <div class="buy">
+                        <div class="price">￥239</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail">
+                    <img src="./image/goods3.png" alt="">
+                    <div class="name">710ml格纹款吸管杯</div>
+                    <div class="buy">
+                        <div class="price">￥159</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+			
+            <div class="goods row">
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail">
+                    <img src="./image/goods4.png" alt="">
+                    <div class="name">焦糖玛奇朵大杯囤囤卡</div>
+                    <div class="buy">
+                        <div class="price">￥148</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail">
+                    <img src="./image/goods5.png" alt="">
+                    <div class="name">茶拿铁大杯双杯券</div>
+                    <div class="buy">
+                        <div class="price">￥59.5</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-xs-12 goShopDetail">
+                    <img src="./image/goods6.png" alt="">
+                    <div class="name">燕麦丝绒拿铁大杯双杯券</div>
+                    <div class="buy">
+                        <div class="price">￥66</div>
+                        <img src="./image/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+			<div class="copyright">
+				© 2023-2026 jiangfuxiang.com 版权所有
+			</div>
+		</div>
+
+		
+	</div>
+	<!-- Bootstrap基于jQuery，需要先引入jQuery文件 -->
+	<script src="./js/jquery.min.js"></script>
+	<!-- Bootstrap所需要的一些组件的*.js文件 -->
+	<script src="./js/bootstrap.js"></script>
+    <script>
+        $(".open").on("click",function(){
+			$(".clickShow").removeClass("hide").addClass("show");
+			setTimeout(function(){
+				window.innerWidth;
+				console.log(111);
+			},0)
+			
+		})
+		$(".close").on("click",function(){
+			$(".clickShow").removeClass("show").addClass("hide")
+			setTimeout(function(){
+				window.innerWidth
+			},0)
+		})
+		$(".goShopDetail").on('click',function(){
+			window.location.href="./shopDetail.html"
+		})
+    </script>
+</body>
+
+</html>

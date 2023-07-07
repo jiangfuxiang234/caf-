@@ -1,0 +1,204 @@
+body{
+    width:100%;
+    height:100%;
+    background: #F8F9FA;
+}
+a{
+    all: unset;
+    color: inherit; 
+    text-decoration: none;
+  }
+  a:hover, a:visited, a:link, a:active {
+    color:#6AB290;
+    text-decoration: none;
+}
+a:hover{
+    color:white
+}
+.container{
+    width:100%;
+    height:100%
+}
+.left{
+height: calc(100vh - 80px);
+position:fixed;
+z-index:100
+}
+.left .clickShow{
+    height: calc(100vh - 80px);
+    position:fixed;
+    z-index:200;
+    background:white;
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 100vh;
+    transition:0.5s
+}
+.left .clickShow .icon .icon1{
+    width:50px;
+    height:50px;
+    margin:20px
+}
+.left .clickShow .icon .icon2{
+    margin-top:30px;
+    width:30px;
+    height:30px;
+    margin-right:20px
+}
+.left .clickShow .text div{
+    text-align:center;
+    padding:20px;
+    font-size:25px
+}
+.left .clickShow .text div:hover{
+    background:rgb(248,249,250)
+}
+.left .clickShow .hide{
+    opacity: 0;
+    transform: scale(2);
+    z-index: -1000;
+}
+.left .clickShow .show{
+    opacity:1;
+    transform: scale(1)
+}
+.left .serve .select div{
+    font-size:14px
+}
+.nav{
+    display:flex;
+    justify-content:space-between
+}
+.nav span{
+    margin-top:20px
+}
+.select{
+    display:flex;
+    justify-content:space-around
+}
+.select div{
+    padding:20px;
+    font-weight:bold
+}
+.select img{
+    width:40px;
+    height:40px;
+    margin-top:5px
+}
+.topic{
+    margin-top:250px;
+    margin-left:50px
+}
+.topic .text span{
+    font-size:30px;
+    font-weight:bold
+}
+.topic .text img{
+    width:80px;
+    height:80px;
+    margin-top:-20px
+}
+.topic .login{
+     display:flex;
+     justify-content:flex-start;
+     margin-left:50px
+}
+.topic .login div{
+    color:#6AB290;
+    padding:10px 20px;
+    border:1px solid #6AB290;
+    border-radius:20px;
+    margin-left:20px
+}
+.topic .login div:hover{
+    background:#198754;
+    color:white
+}
+.topic .login div:hover a{
+    color:white
+}
+@media (max-width: 800px){
+.left{
+    display:none
+}
+}
+@media (max-width: 1108px){
+    .topic{
+        display:none
+    }
+    }
+.right{
+    background:#F8F9FA;
+    position:absolute;
+    right:0
+}
+.right .rotation{
+    height:500px;
+    margin-bottom:40px
+}
+.right .image{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-around
+}
+.right .image img{
+    border-radius:10px;
+    padding:0;
+    transition:.3s;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.right .image img:hover{
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.22);
+    transform: translateY(-20px);
+}
+.right .club{
+    background:white;
+    margin-top:40px;
+    height:230px
+}
+.right .club .title{
+    padding:40px 20px 20px 40px;
+    font-size:30px
+}
+.right .club .text{
+    font-size:20px;
+    color:#6C757D;
+    padding-left:40px;
+    line-height:40px
+}
+.right .club .text .more{
+    color:#C2A661
+}
+.right .club img{
+    margin-top:40px
+}
+#pic .arrow {
+    font-size: 6rem;
+    color: rgb(236, 243, 236);
+}
+.copyright{
+    background:white;
+    position:relative;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    font-size:18px
+}
+.copyright:before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:50px;
+    background:white;
+    left:-20px
+}
+.copyright:after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:50px;
+    background:white;
+    right:-5px
+}
+

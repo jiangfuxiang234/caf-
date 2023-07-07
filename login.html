@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 根据设备的大小调整页面的显示宽度，缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星享咖啡馆</title>
+    <!-- Bootstrap所需要的一些基础样式的*.css文件 -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 网页标签的icon图标 -->
+    <link rel="shortcut icon" href="./image/star.png" type="image/x-icon">
+    <!-- index页面所需要的一些基础样式的css文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- login页面所需要的一些基础样式的css文件 -->
+    <link rel="stylesheet" href="./css/login.css">
+    <style type="text/css">
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 页面布局等代码 -->
+    <div class="container row">
+        <div class="left col-lg-4">
+            <div class="serve">
+                <div class="nav">
+                    <div class="select">
+                        <img src="./image/star.png" alt="">
+                        <div>门店</div>
+                        <div>我的账户</div>
+                        <div>菜单</div>
+                    </div>
+                    <span class="glyphicon glyphicon-align-justify open"></span>
+                </div>
+
+                <div class="topic">
+                    <div class="text">
+                        <span>登录或创建一个新账户</span>
+                        <img src="./image/join-star.png" alt="">
+                    </div>
+                    <div class="select-login">
+                        <div class="active">登录</div>
+                        <div class="line"></div>
+                        <div class="empty"></div>
+                        <div class="register">注册</div>
+                        <div class="club">关于星享俱乐部</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clickShow hide">
+                <div class="icon">
+                    <img class="icon1" src="./image/star.png" alt="">
+                    <img class="icon2 close" src="./image/close.png" alt="">
+                </div>
+                <div class="text">
+                    <div>门店</div>
+                    <div>星享俱乐部</div>
+                    <hr>
+                    <div>菜单</div>
+                    <div>星享移动应用</div>
+                    <div>星礼卡</div>
+                    <div>星享甄选</div>
+                    <div>啡快——在线</div>
+                    <div>专星送</div>
+                </div>
+            </div>
+        </div>
+        <div class="right col-lg-8 login">
+            <img class="col-lg-12 col-md-12 col-xs-12 banner" src="./image/hello-star.jpg" alt="">
+            <div class="input">
+                <div class="content">
+                    <input type="text" name="userName" placeholder="用户名">
+                    <span style="color: red; display: none;">用户名不能为空</span>
+                    <div class="line"></div>
+                </div>
+                <div class="content">
+                    <input type="password" name="password" id="" placeholder="密码">
+                    <span style="color: red; display: none;">密码不能为空</span>
+                    <div class="line"></div>
+                </div>
+                <div class="btn">
+                    登录
+                </div>
+            </div>
+            <img class="footer" src="./image/footer.png" alt="">
+            <div class="copyright">
+				© 2023-2026 jiangfuxiang.com 版权所有
+			</div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <!-- Bootstrap基于jQuery，需要先引入jQuery文件 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap所需要的一些组件的*.js文件 -->
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        $(".goShop").on('click', function () {
+            window.location.href = "./shop.html"
+        })
+        $(".select-login .register").on('click', function () {
+            window.location.href = "./register.html"
+        })
+        $(".select-login .club").on('click', function () {
+            window.location.href = "./aboutStar.html"
+        })
+        $(".open").on("click", function () {
+            $(".clickShow").removeClass("hide").addClass("show");
+            setTimeout(function () {
+                window.innerWidth;
+            }, 0)
+
+        })
+        $(".close").on("click", function () {
+            $(".clickShow").removeClass("show").addClass("hide")
+            setTimeout(function () {
+                window.innerWidth
+            }, 0)
+        })
+
+        $('.btn').click(function () {
+            var userNameInput = $('.content input[name="userName"]')
+            var passwordInput = $('.content input[name="password"]')
+
+            var userName = userNameInput.val()
+            var password = passwordInput.val()
+
+            // 各项填写信息进行非空验证
+            if (!userName) {
+                userNameInput.find('+ span').css("display", "inline")
+            } else {
+                userNameInput.find('+ span').css("display", "none")
+            }
+
+            if (!password) {
+                passwordInput.find('+ span').css("display", "inline")
+            } else {
+                passwordInput.find('+ span').css("display", "none")
+            }
+
+            var userNameIsTrue = localStorage.getItem("userName") === userName
+            var passwordIsTrue = localStorage.getItem("password") === password
+            var isTrue = userNameIsTrue && passwordIsTrue
+            if(userName && password && isTrue){
+                sessionStorage.setItem('isLogin', 'true')
+                window.location.href = "index.html"
+            }else if(userName && password && !isTrue){
+                alert("账号或密码错误")
+            }
+        })
+    </script>
+</body>
+
+</html>
